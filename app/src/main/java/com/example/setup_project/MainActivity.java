@@ -45,7 +45,7 @@ Boolean Login;
 
                 // need to set a boolean to see if user selected sing up or log in
                 Login = (false);
-                Log.d("Persistance" , "Boolean variable is False");
+               // Log.d("Persistance" , "Boolean variable is False");
 
                 HideAll();
                 ShowSignIn();
@@ -59,7 +59,7 @@ Boolean Login;
 
 
                 Login = (true);
-                Log.d("Persistance" , "Boolean variable is true");
+               // Log.d("Persistance" , "Boolean variable is true");
                 HideAll();
                 ShowLogIn();
             }
@@ -146,16 +146,16 @@ Boolean Login;
         // Getting shared Preferences
         SharedPreferences recover = getSharedPreferences("MYSP", MODE_PRIVATE);
         String UN = recover.getString("Key1", "NOT DEFINED");
-        Log.d("Persistance" , "Shared Pref is   " + UN);
+        //Log.d("Persistance" , "Shared Pref is   " + UN);
         String PW = recover.getString("Key2", "NOT DEFINED");
-        Log.d("Persistance" , "shared pref is  " + PW);
+        //Log.d("Persistance" , "shared pref is  " + PW);
 
 
 
         String UserNameAttempt = Username.getText().toString();
-        Log.d("Persistance" , "attempt entered is  " + UserNameAttempt);
+        //Log.d("Persistance" , "attempt entered is  " + UserNameAttempt);
         String PasswrodAttempt = Password.getText().toString();
-        Log.d("Persistance" , "attempt entered is  " + PasswrodAttempt);
+        //Log.d("Persistance" , "attempt entered is  " + PasswrodAttempt);
 
         // compare username user entered against username they added when they signed in
         if (UserNameAttempt.equals(UN) && PasswrodAttempt.equals(PW)) {
@@ -178,10 +178,6 @@ Boolean Login;
 
 
     }
-
-
-
-
 
 
 }// end of class
