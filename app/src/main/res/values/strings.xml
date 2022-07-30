@@ -7,4 +7,13 @@
     <string name="btnSignUp">Sign Up</string>
     <string name="Email">Email Address</string>
     <string name="submit">Submit</string>
+    <string name="txtCalculatorTitle">Basic Calculator app</string>
+    <string name="btnAdd">+</string>
+    <string name="btnSubtract">-</string>
+    <string name="btnMultiply">x</string>
+    <string name="btnDivide">/</string>
+    <string name="btnCalculator_Result">Result</string>
+    <string name="txtClear">Clear</string>
+    <string name="txtOperator">Select An Operator</string>
+    <string name="txtDisplay_Result">Result</string>
 </resources>

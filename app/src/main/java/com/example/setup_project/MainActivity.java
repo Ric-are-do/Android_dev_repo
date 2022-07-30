@@ -3,6 +3,7 @@ package com.example.setup_project;
 // log in page with splash screen
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -109,6 +110,7 @@ Boolean Login;
         Password.setVisibility(View.VISIBLE);
         Submit.setVisibility(View.VISIBLE);
 
+
     };
 
     public void HideAll(){
@@ -160,6 +162,8 @@ Boolean Login;
         // compare username user entered against username they added when they signed in
         if (UserNameAttempt.equals(UN) && PasswrodAttempt.equals(PW)) {
             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+            //navigates to the next class for the calculator
+            startActivity(new Intent(MainActivity.this ,  Calculator.class));
 
         }else{
             Toast.makeText(this, "Incorrect Credentials", Toast.LENGTH_LONG).show();
